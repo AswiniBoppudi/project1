@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<h3>Array methods</h3>
+<script>
+const arr =  ["apple", "orange", "cherry"];
+arr.pop();
+document.write("pop<br>"+arr);
+let n=arr.length;
+document.write("<br>length<br>"+n);
+document.write("<br>foreach");
+arr.forEach(myFunction);
+function myFunction(item) {
+
+    document.write("<br>"+item);
+}
+document.write("<br>Indexof:")
+let a=arr.indexOf("orange");
+document.write("<br>"+a);
+const arr2=["1","2","3"];
+const b=arr.concat(arr2);
+document.write("<br>Concat<br>"+b);
+let k={ "name": "Toyota Rav4", "engine": "2.5L", "price": 32000 };
+let m=JSON.parse(k);
+document.write(m);
+</script>
+</head>
+<body>
+<h3>Returns a passed string with letters in alphabetical order</h3>
+<script>
+function alphabet_order(str)
+  {
+return str.split('').sort().join('');
+  }
+document.write(alphabet_order("webmaster"));
+</script> 
+<br>
+</body>
+</html>
